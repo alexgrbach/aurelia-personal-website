@@ -1,0 +1,6 @@
+<template>
+  <require from="./home.css"></require>
+  <div class="home">
+    <div repeat.for="nav of router.navigation" click.delegate="navigate(nav.href)">${nav.title}</div>
+  </div>
+</template>

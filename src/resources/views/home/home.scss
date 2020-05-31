@@ -1,0 +1,10 @@
+.home{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+  div{
+    grid-column: span 1;
+    height: 1fr;
+  }
+}
