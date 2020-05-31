@@ -1,10 +1,53 @@
 .home{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
+
+  h1{
+    padding-top: 10vh;
+  }
 
   div{
     grid-column: span 1;
-    height: 1fr;
+    height: 33vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+  }
+
+  @media (min-width:999px) { 
+    grid-template-columns: repeat(3, 1fr);
+    div{
+      height: 99vh;
+    }
+  }
+
+  div:hover{
+    text-decoration: underline;
+  }
+
+  .Photography:hover{
+    background-image: url('./img/photography.gif');
+  }
+
+  .Photography{
+    background-image: url('./img/photography.jpg');
+  }
+
+  .Code:hover{
+    background-image: url('./img//code.gif');
+  }
+
+  .Code{
+    background-image: url('./img/code.jpg');
+  }
+
+  .About:hover{
+    background-image: url('./img/about.gif');
+  }
+
+  .About{
+    background-image: url('./img/about.jpg');
   }
 }

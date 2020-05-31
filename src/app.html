@@ -1,13 +1,12 @@
 <template>
   <require from="./app.css"></require>
   <nav if.bind="router.currentInstruction.config.name !== 'Home'">
-    <ul>
-      <li repeat.for="nav of router.navigation" class="${nav.isActive ? 'active' : ''}">
-        <a href.bind="nav.href">
-          ${nav.title}
-        </a>
-      </li>
-    </ul>
+    <div>Alexander Grbach</div>
+    <div repeat.for="nav of router.navigation" class="${nav.isActive ? 'active' : ''}">
+      <a href.bind="nav.href">
+        ${nav.title}
+      </a>
+    </div>
   </nav>
   <router-view></router-view>
 </template>

@@ -1,29 +1,42 @@
-nav{
-  justify-self: center;
-  align-self: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-  ul{
-    padding: 0;
-  }
-  li{
-    display: inline-block;
-    +:before{
-      content: '|';
-      padding: 10px 10px;
-    }  
-    :hover{
-      text-decoration: underline;
+nav{
+  font-weight: 100;
+  font-size: 2em;
+  color: black;
+
+  @media (min-width:999px) { 
+    justify-self: center;
+    
+    div{
+      display: inline-block;
+      +:before{
+        content: '|';
+        margin: 10px 10px;
+      }  
     }
   }
-  .active{
-    font-weight: bold;
-  }
-  
+
   a{
     text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  a:visited{
+    color: black;
+  }
+
+  .active{
+    a{
+      font-weight: 300;
+    }
   }
 }
 
 body{
   display: grid;
+  font-family: 'Roboto', sans-serif;
 }

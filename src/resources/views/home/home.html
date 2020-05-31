@@ -1,6 +1,8 @@
 <template>
   <require from="./home.css"></require>
   <div class="home">
-    <div repeat.for="nav of router.navigation" click.delegate="navigate(nav.href)">${nav.title}</div>
+    <div repeat.for="nav of router.navigation" class="${nav.title}" click.delegate="navigate(nav.href)">
+      <h1>${nav.title}</h1>
+    </div>
   </div>
 </template>
